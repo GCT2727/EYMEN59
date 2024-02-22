@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+  // Değişkenleri tanımla
+  int sayi1, sayi2, islem;
+
+  // Kullanıcıdan sayıları ve işlemi al
+  cout << "Birinci sayiyi giriniz: ";
+  cin >> sayi1;
+  cout << "Ikinci sayiyi giriniz: ";
+  cin >> sayi2;
+  cout << "Yapmak istediğiniz işlemi giriniz (1: Toplama, 2: Çıkarma, 3: Çarpma, 4: Bölme): ";
+  cin >> islem;
+
+  // Seçilen işleme göre hesaplama yap
+  switch (islem) {
+    case 1:
+      cout << sayi1 << " + " << sayi2 << " = " << sayi1 + sayi2 << endl;
+      break;
+    case 2:
+      cout << sayi1 << " - " << sayi2 << " = " << sayi1 - sayi2 << endl;
+      break;
+    case 3:
+      cout << sayi1 << " * " << sayi2 << " = " << sayi1 * sayi2 << endl;
+      break;
+    case 4:
+      cout << sayi1 << " / " << sayi2 << " = " << sayi1 / sayi2 << endl;
+      break;
+    default:
+      cout << "Gecersiz islem girdiniz!" << endl;
+  }
+
+  return 0;
+}
